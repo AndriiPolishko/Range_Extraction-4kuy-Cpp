@@ -4,7 +4,9 @@
 using namespace  std;
 std::string range_extraction(const std::vector<int> & ) ;
 int main() {
-
+    vector<int> v = {-6,-3,-2,-1,0,1,3,4,5,7,8,9,10,11,14,15,17,18,19,20};
+    string res = range_extraction(v);
+    cout<<res;
     return 0;
 }
     std::string range_extraction(const std::vector<int> &args)
