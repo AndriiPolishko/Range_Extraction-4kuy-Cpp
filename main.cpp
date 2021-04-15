@@ -17,20 +17,19 @@ int main() {
         temp=to_string(args[i-1]);
         if(args[i-1]==args[i]-1)
         {
-
             while(args[i-1]==args[i]-1 && i <args.size())
             {
                 i++;
                 k++;
             }
-            if(k==1)
+            if(k==1 )
                 temp+=','+to_string(args[i-1]);
             else
                 temp+='-'+to_string(args[i-1]);
             k=0;
         }
-        res+=temp+',';
+        if(i!=args.size())res+=temp+',';
+        else res+=temp;
     }
-    res.erase(res.size()-1,1);
     return res;
     }
